@@ -1,0 +1,29 @@
+.section-footer-1
+{
+    background: linear-gradient(rgba(0,0,0,.02),rgba(0,0,0,0.05)),url(../../images/join-us-bg.png) center no-repeat;
+    background-size: cover;
+    background-position: top center;
+    text-align: center;
+}
+
+.section-footer-1 h1 
+{
+    color: var(--color-primary);
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.section-footer-1 p{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 40px;
+}
+.section-footer-1 .btn 
+{
+    padding: 20px 30px;
+    border-radius: 6px;
+    background-color: var(--color-secondary);
+    color: #fff;
+    font-weight: 400;
+    display: inline-block;
+    margin-top: 50px;
+}

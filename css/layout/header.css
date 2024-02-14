@@ -1,0 +1,145 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 1004;
+}
+
+header.active {
+    box-shadow: 5px 0 5px var(--color-light);
+}
+
+header .navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 75px;
+}
+
+.navbar .navbar-brand {
+    margin-right: auto;
+}
+.navbar-brand a{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.navbar .navbar-list {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.navbar-list-item a {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-black);
+}
+
+.navbar-list-item a:is(.active, :hover) {
+    color: var(--color-primary);
+}
+
+.navbar .btn-change-page-theme {
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    background: #F3F3F3;
+}
+
+.btn-change-page-theme img {
+    margin: auto;
+    width: 20px;
+}
+
+.navbar .btn-navbar-list-toggler {
+    height: 46px;
+    width: 46px;
+    background: transparent;
+    border-radius: 150px;
+    margin-left: 8px;
+    display: none;
+    place-content: center;
+    gap: 8px;
+}
+
+.btn-navbar-list-toggler span {
+    display: block;
+    height: 2px;
+    width: 30px;
+    background: var(--color-light);
+    border-radius: 6px;
+    transform: all .2s ease;
+}
+
+.navbar .btn-navbar-list-toggler:hover {
+    background: #f3f2f2;
+}
+
+.btn-navbar-list-toggler.times {
+    gap: 0;
+}
+
+.btn-navbar-list-toggler.times :nth-child(2) {
+    display: none;
+}
+
+.btn-navbar-list-toggler.times :nth-child(1) {
+    transform: rotate(40deg);
+}
+
+.btn-navbar-list-toggler.times :nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+
+@media (max-width: 980px) {
+    .navbar-list-item a {
+        font-size: 16px;
+    }
+
+    .navbar .btn-change-page-theme {
+        height: 28px;
+        width: 28px;
+    }
+}
+
+@media (max-width: 860px) {
+    .navbar .navbar-list {
+        gap: 14px;
+    }
+
+    .navbar-list-item a {
+        font-size: 14px;
+    }
+
+    .navbar .btn-change-page-theme {
+        height: 26px;
+        width: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar .btn-navbar-list-toggler {
+        display: grid;
+    }
+
+    .navbar .navbar-list {
+        position: absolute;
+        top: 100%;
+        right: -200%;
+        background: #fff;
+        padding: 16px 0;
+        flex-direction: column;
+        width: 100%;
+        transition: all .2s ease;
+        margin-right: 0;
+    }
+
+    .navbar .navbar-list.show {
+        right: 0;
+    }
+}

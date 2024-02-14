@@ -1,0 +1,27 @@
+.section-page-info{
+    background: var(--color-secondary);
+    padding-block: 30px;
+}
+
+.section-page-info .section-page-title{
+    color: #fff;
+    font-size: 33px;
+    font-weight: 500;
+}
+.section-page-info .breadcrumb-trail {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.breadcrumb-trail :where(li){
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.breadcrumb-trail li a {
+    color:var(--bg-light);
+    font-weight: 400;
+    font-size: 16px;
+}

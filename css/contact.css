@@ -1,0 +1,125 @@
+.section-1,.section-2{
+    background: #fff;
+}
+.section-1 .section-1-grid {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    align-items: start;
+    background: var(--color-secondary);
+    border-radius: 6px;
+}
+
+.section-1-grid .section-title {
+    color: #fff;
+}
+
+.section-grid-1-items{
+    display: grid;
+    gap: 30px;
+    padding: 30px 0;
+}
+.section-grid-1-items .row {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 30px;
+    border-radius: 6px;
+    gap: 20px;
+}
+.section-grid-1-items .row img {
+    max-height: 120px;
+}
+.row .row-body{
+    line-height: 35px;
+}
+.row-body h3 
+{
+    font-size: 20px;
+    font-weight: 600;
+}
+.row-body p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 9px;
+}
+
+.section-grid-2-form {
+    padding: 30px 0;
+    display: grid;
+    gap: 30px;
+}
+.section-1-field .inp{
+    padding: 0 30px;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+}
+.section-1-field input{
+    height: 80px;
+}
+.section-1-field textarea{
+    height: 200px;
+    resize: none;
+    padding-top: 20px !important;
+}
+.section-grid-2-form .btn-submit{
+    padding: 20px 30px;
+    border-radius: 5px;
+    border: 1px solid;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    justify-self: end;
+    background: transparent;
+}
+
+.err {
+    color: rgb(189, 62, 16);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+}
+@media (max-width:980px) {
+    .section-1 .section-1-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .section-grid-1-items .row {
+        padding: 18px 16px;
+    }
+    .row img {
+        max-height: 90px;
+    }
+}
+@media (max-width:520px) {
+    .section-1 .section-1-grid{
+        padding: 20px 12px;
+        gap: 0;
+    }
+
+    .section-1-grid>div{
+        padding: 16px 9px;
+    }
+    .section-grid-1-items .row img {
+        max-height: 70px;
+    }
+    .row .row-body {
+        line-height: 25px;
+    }
+    .row-body h3{
+        font-size: 16px;
+    }
+    .row-body p{
+        font-size: 14px;
+    }
+    .section-grid-2-form .section-1-field input {
+        height: 50px;
+        font-size: 16px;
+    }
+    .section-grid-2-form .section-1-field textarea {
+        height: 160px;
+        font-size: 16px;
+    }
+}

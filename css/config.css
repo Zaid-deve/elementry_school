@@ -1,0 +1,140 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins&weight=300&400&500&600&700);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: 'Poppins',sans-serif;
+}
+
+:root{
+    --color-primary: #02897A;
+    --color-secondary: #3ad8c6;
+    --color-black: #000000;
+    --color-light: #BBBBBB;
+    --bg-light: #EDEDED;
+    --bg-linear: linear-gradient(to bottom,#FDFDFD, #EDEDED)
+}
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.container {
+    max-width: 1220px;
+    width: 100%;
+    padding: 0 50px;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 600;
+}
+p{
+    font-size: 20px;
+    color: var(--color-black);
+    font-weight: 500;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--bg-light);
+    padding-top: 75px;
+}
+
+img {
+    display: block;
+    max-height: 100%;
+}
+.inp{
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.section {
+    padding: 40px 0;
+}
+.section.linear 
+{
+    background: var(--bg-linear);
+}
+
+h2.section-title {
+    color: var(--color-black);
+    text-transform: uppercase;
+}
+h2.section-title strong{
+    color: var(--color-secondary);
+    font-weight: inherit;
+}
+
+@media (max-width:980px) {
+    .container{
+        padding-inline: 40px;
+    }
+}
+
+
+@media (max-width:768px) {
+    .container{
+        padding-inline: 30px;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+    p{
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width:560px) {
+    .container{
+        padding-inline: 22px;
+    }
+
+    h2{
+        font-size: 22px;
+    }
+    h1{
+        font-size: 35px;
+    }
+    p{
+        font-size: 17px;
+    }
+}
