@@ -49,7 +49,7 @@ if (isset($_POST['submit'])) {
     <style>
         @import url(../css/config.css);
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
             background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.5)),url(https://i.pinimg.com/originals/e2/4f/fb/e24ffbced22f79e61ac7c1aadb7975df.jpg) center no-repeat;

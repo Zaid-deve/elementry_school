@@ -58,10 +58,13 @@ if(isset($_POST['submit'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        * {
-            padding: 0;
+         @import url(../css/config.css);
+        body {
+            font-family: 'Poppins', sans-serif;
             margin: 0;
-            box-sizing: border-box;
+            padding: 0;
+            background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.5)),url(https://i.pinimg.com/originals/e2/4f/fb/e24ffbced22f79e61ac7c1aadb7975df.jpg) center no-repeat;
+            background-size: cover;
         }
 
         .container {
